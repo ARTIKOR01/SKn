@@ -1,0 +1,22 @@
+.feedback-card {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid $clrEmpty;
+    border-bottom: 1px solid $clrEmpty;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+  }
+
+  &__edit {
+    margin-top: 10px;
+  }
+}
+
+@import "_media-feedback";

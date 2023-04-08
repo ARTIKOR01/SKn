@@ -1,0 +1,96 @@
+@media (min-width: 768px) {
+	.description {
+    @media (min-width:810px) {
+      &__header {
+        flex-direction: row;
+        padding: 20px;
+      }
+
+      &__right-side,
+      &__left-side {
+        justify-content: flex-start;
+      }
+
+      &__right-side {
+        width: auto;
+        margin-top: 0px;
+        flex-direction: row-reverse;
+      }
+
+      &__number {
+        margin-left: 10px;
+      }
+
+      &__view {
+        margin-left: 15px;
+      }
+
+      &__edit-btn {
+        margin-left: 15px;
+      }
+    }
+		&__body {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			border-top: 1px solid $clrEmpty;
+			border-bottom: 1px solid $clrEmpty;
+			& li:not(:last-child) {
+				margin-bottom: 13px;
+			}
+
+			& li {
+				display: flex;
+			}
+		}
+
+		&__item-head {
+			margin-bottom: 0px;
+			min-width: 190px;
+		}
+
+		&__footer {
+			padding: 20px;
+		}
+	}
+
+	.response-card {
+		&__footer {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+			padding: 20px;
+		}
+
+		&__butn {
+			width: 250px;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.description {
+		&__item-head {
+			min-width: 220px;
+		}
+	}
+
+	.response-card {
+		&__footer {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+			padding: 20px;
+		}
+
+		&__butn {
+			width: 290px;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

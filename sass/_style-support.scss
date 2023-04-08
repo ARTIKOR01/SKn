@@ -1,0 +1,105 @@
+.contact {
+  margin-bottom: 20px;
+
+  &__head {
+    padding: 15px 20px;
+    border-bottom: 1px solid $clr-gr-EB;
+  }
+
+  &__body {
+    padding: 20px;
+  }
+}
+
+.faq {
+  margin-bottom: 20px;
+  &__head {
+    padding: 15px 20px;
+    border-bottom: 1px solid $clr-gr-EB;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    & svg {
+      width: 10px;
+      height: 10px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $clr-gr-EB;
+    }
+    &:hover {
+      background-color: $clr-gr-EB;
+    }
+    &:active {
+      background-color: $clrEmpty;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    border-bottom: 1px solid $clr-gr-EB;
+  }
+}
+.spoiler {
+  .faq__content {
+    display: none;
+  }
+}
+.spoiler.active {
+  .faq__content {
+    display: block;
+  }
+  & svg {
+    transform: rotateX(180deg);
+  }
+}
+.feedback-form {
+  &__head {
+    padding: 15px 20px;
+    border-bottom: 1px solid $clr-gr-EB;
+  }
+
+  &__inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__left-side {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  &__textarea {
+    border-radius: 4px;
+    border: 1px solid $clrEmpty;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    &::placeholder {
+      color: $clrEmpty;
+      font-size: 18px;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid $clr-blue;
+    }
+  }
+
+  &__right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@import "_media-support";

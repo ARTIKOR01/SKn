@@ -1,0 +1,212 @@
+//?-------------------------------------------
+//*_____0-xs-0______-->310--______0-xs-0______
+//?-------------------------------------------
+
+@media (min-width: 576px) {
+  .hero {
+    &__left-side {
+      &_order {
+        display: block;
+      }
+    }
+  }
+
+  //!--дропдаун--
+  .my-order {
+    &_profile {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      & h2 {
+        min-width: 130px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  //!--карточка--
+  .order-card {
+    &__bot {
+      align-items: flex-start;
+    }
+  }
+}
+
+//?------------------------------------------
+//*_____1-sm-1______--768--______1-sm-1______
+//?------------------------------------------
+
+@media (min-width: 768px) {
+  //!--размещение-заказа--
+  .make-order {
+    display: flex;
+    justify-content: flex-start;
+
+    &__right-side {
+      margin: 0 0 0 15px;
+      padding: 0px 0 0 15px;
+      border-top: 0px solid $clrEmpty;
+      border-left: 1px solid $clrEmpty;
+    }
+
+    &__item {
+      margin-top: 15px;
+    }
+
+    &__icon {
+      fill: $clrTextBlack;
+      width: 22px;
+      height: 22px;
+      & use {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &__text {
+      color: $clrTextGray;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+  }
+
+  //!--дропдаун--
+  .my-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__select {
+      font-size: 15px;
+      max-width: 240px;
+      max-height: 44px;
+    }
+
+    &__order-card {
+      margin-top: 0px;
+    }
+
+    &_profile {
+      flex-direction: row;
+      justify-content: flex-start;
+      & h2 {
+        min-width: 130px;
+      }
+    }
+  }
+
+  //!--карточка--
+  .order-card {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+    &__left-side,
+    &__right-side {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__right-side {
+      margin-top: 0px;
+      flex-direction: row-reverse;
+    }
+
+    &__status {
+      margin-left: 10px;
+    }
+
+    &__text {
+      &_delete {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+//?------------------------------------------
+//*_____2-md-2______--992--______2-md-2______
+//?------------------------------------------
+
+@media (min-width: 992px) {
+  //----kit----
+  .status {
+    font-size: 18px;
+    padding: 6px 25px;
+    margin-left: 20px;
+  }
+  //!------------1----HERO----1------------
+
+  //!--размещение-заказа--
+  .make-order {
+    padding: 20px;
+    &__right-side {
+      margin: 0 0 0 20px;
+      padding: 0px 0 0 20px;
+      border-top: 0px solid $clrEmpty;
+      border-left: 1px solid $clrEmpty;
+    }
+
+    &__head {
+      font-size: 18px;
+    }
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      & use {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  //!--дропдаун--
+  .my-order {
+    &_profile {
+      & h2 {
+        min-width: 180px;
+      }
+    }
+  }
+
+  //!--карточка--
+  .order-card {
+    &__header {
+      padding: 15px 20px;
+    }
+
+    &__number {
+      margin-left: 10px;
+    }
+
+    &__body {
+      padding: 20px;
+    }
+    &__footer {
+      padding: 10px 20px;
+    }
+
+    &__top {
+      margin-bottom: 0;
+    }
+
+    &__between {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &__found {
+      margin-right: 20px;
+    }
+
+    &__bot {
+      display: none;
+    }
+  }
+}

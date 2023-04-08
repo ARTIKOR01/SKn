@@ -1,0 +1,209 @@
+//----kit----
+
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 5px 24px;
+  color: $clrEmpty;
+  border-radius: 4px;
+  border: 1px solid $clrEmpty;
+  &_theme {
+    &_active {
+      border: 1px solid $clr-blue;
+      color: $clr-blue;
+    }
+    &_moderation {
+      border: 1px solid $clr-sky;
+      color: $clr-sky;
+    }
+    &_success {
+      border: 1px solid $clr-green;
+      color: $clr-green;
+    }
+  }
+}
+
+//!------------1----HERO----1------------
+
+.hero {
+  &__left-side {
+    &_order {
+      display: none;
+    }
+  }
+}
+
+//!--размещение-заказа--
+.make-order {
+  padding: 15px;
+  &__left-side {
+    margin-bottom: 15px;
+  }
+
+  &__butn {
+    margin: 10px 0 0 0;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__right-side {
+    padding-top: 10px;
+    border-top: 1px solid $clrEmpty;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__icon {
+    fill: $clrTextBlack;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    & use {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.categories-tag {
+  &__item {
+    background-color: $clr-gr-EB;
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+  }
+}
+
+//!--дропдаун--
+.my-order {
+  &__select {
+    min-height: 44px;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $clr-gr-EB;
+    border-radius: 4px;
+  }
+
+  &__order-card {
+    margin-top: 30px;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &_profile {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 0;
+    margin: 0 18px;
+    & h2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//!--карточка--
+.order-card {
+  //?--header--
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  &__left-side,
+  &__right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right-side {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__edit-btn,
+  &__delete-btn {
+    cursor: pointer;
+  }
+
+  &__edit-btn {
+    margin-left: 15px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__number {
+    margin-left: 5px;
+  }
+
+  //?--body--
+  &__body {
+    border-top: 1px solid $clr-gr-EB;
+    border-bottom: 1px solid $clr-gr-EB;
+    padding: 20px 15px;
+  }
+
+  &__head {
+    font-size: 18px;
+    font-weight: bold;
+    color: $clr-blue;
+    margin-bottom: 10px;
+  }
+
+  //?--footer--
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: $clr-blue;
+    min-width: 150px;
+  }
+
+  &__between {
+    display: none;
+  }
+
+  &__bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__found,
+  &__edited {
+    font-size: 15px;
+    color: $clrEmpty;
+  }
+}
+
+@import "_media-order";

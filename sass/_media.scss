@@ -1,0 +1,511 @@
+//?-------------------------------------------
+//*_____0-xs-0______-->310--______0-xs-0______
+//?-------------------------------------------
+
+@media (min-width: 576px) {
+  //!------------0----HEADER----0-----------
+  .header {
+    &__res320,
+    &__res992 {
+      display: none;
+    }
+
+    &__res576 {
+      display: flex;
+    }
+
+    &__logo {
+      width: 172px;
+      height: 50px;
+    }
+
+    &__profile-btn,
+    &__burger-btn {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin-right: 0px;
+      transition: all 0.2s;
+    }
+
+    &__profile-bar {
+      max-width: 500px;
+    }
+  }
+
+  //!------------1----HERO----1-----------
+  .hero {
+    &__left-side {
+      display: block;
+    }
+
+    &__banner-576 {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  .profile {
+    &__320-wrap {
+      max-width: 500px;
+    }
+
+    &__user-info {
+      flex-direction: column;
+    }
+
+    &__user-right-side {
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+
+  .banner {
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .delete {
+    flex-direction: column;
+    &__cross {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  //!------------2----ADDITIONAL----2------------
+  .additional {
+    display: none;
+  }
+}
+
+//?------------------------------------------
+//*_____1-sm-1______--768--______1-sm-1______
+//?------------------------------------------
+
+@media (min-width: 768px) {
+  //!------------1----HERO----1-----------
+
+  .profile-desk {
+    &__user-left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__user-name {
+      font-size: 15px;
+    }
+
+    &__user-phone {
+      font-size: 15px;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      margin-left: 5px;
+    }
+
+    &__text-wrap {
+      display: flex;
+    }
+
+    &__text {
+      font-size: 15px;
+      margin-left: 20px;
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  .accordion {
+    position: relative;
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid $clr-gr-EB;
+      margin: 0 18px;
+    }
+
+    &__title--hide {
+      display: none;
+    }
+
+    &__head {
+      color: $clrTextGray;
+      min-width: 62px;
+      padding: 0;
+      &_master-width {
+        min-width: 130px;
+        max-width: 140px;
+      }
+    }
+
+    &__label {
+      font-size: 15px;
+    }
+
+    &__body {
+      color: $clrTextBlack;
+      margin: 0 70px 0 10px;
+      &_picture {
+        margin: 0 0px 0 10px;
+      }
+    }
+
+    //?--content--
+    &__content {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      margin: 0px 18px;
+      transition: opacity 0.3s, height 0.3s, margin-top 0.3s, padding 0.3s;
+      opacity: 0;
+      height: 0;
+      transform: translateY(-3px);
+      &.show {
+        height: auto;
+        margin: 0px 18px;
+        opacity: 1;
+        padding: 20px 0;
+        border-bottom: 1px solid $clr-gr-EB;
+        transition: opacity 0.3s, height 0.3s, margin 0.3s, padding 0.3s;
+      }
+    }
+
+    &__inp-wrap {
+      margin-bottom: 0;
+    }
+
+    &__address-block {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__confirm-btn {
+      margin-left: 30px;
+    }
+  }
+
+  .form-spoiler {
+    &__inp-block {
+      margin-right: 15px;
+    }
+
+    &__inp-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0px;
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+
+    &__icon-wrap {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      position: relative;
+      &_code {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  [data-indents-margin-forgot-password] {
+    margin-bottom: 32px;
+    @media (min-width: 992px) {
+      margin-bottom: 37px;
+    }
+  }
+}
+
+//?------------------------------------------
+//*_____2-md-2______--992--______2-md-2______
+//?------------------------------------------
+
+@media (min-width: 992px) {
+  //!------------0----HEADER----0-----------
+  .header {
+    &__res320,
+    &__res576 {
+      display: none;
+    }
+
+    &__res992 {
+      display: flex;
+    }
+
+    &__nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    &__nav-item {
+      padding: 20px;
+    }
+
+    &__nav-link {
+      color: $clrTextBlack;
+    }
+
+    &__profile {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  //!------------1----HERO----1-----------
+
+  .hero {
+    &__nav-chain {
+      padding-top: 20px;
+      margin-top: 0px;
+    }
+
+    &__accordion {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+  }
+
+  .profile-desk {
+    &__user-left-side {
+      & img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+
+    &__user-name {
+      font-size: 18px;
+    }
+
+    &__user-phone {
+      font-size: 18px;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+    &__attention {
+      width: 26px;
+      height: 26px;
+      font-size: 15px;
+    }
+  }
+
+  .bridge {
+    padding: 30px 10px;
+    &__media-block {
+      margin-left: 20px;
+    }
+    &__media-head {
+      font-size: 18px;
+      color: $clrEmpty;
+      margin-bottom: 10px;
+    }
+
+    &__media-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__media-name {
+      color: $clrTextBlack;
+      font-size: 18px;
+    }
+  }
+
+  .accordion {
+    &__trigger {
+      font-size: 18px;
+    }
+
+    &__head {
+      font-size: 18px;
+      min-width: 73px;
+      &_master-width {
+        min-width: 140px;
+      }
+    }
+
+    &__body {
+      margin: 0 80px 0 50px;
+      &_picture {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0px 0 10px;
+      }
+    }
+
+    &__inp-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__inp-block {
+      display: flex;
+      flex-direction: column;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__label {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      min-height: 44px;
+      font-size: 18px;
+      padding: 10px 15px;
+    }
+
+    &__eye {
+      top: 16px;
+      height: 12px;
+      width: 24px;
+    }
+
+    &__zoom {
+      width: 20px;
+      height: 20px;
+      top: 13px;
+    }
+
+    &__forgot {
+      font-size: 18px;
+    }
+
+    &__button-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__confirm-btn {
+      padding: 10px 22px;
+      max-width: 100%;
+      min-height: 44px;
+      font-size: 18px;
+      margin: 0 0 0px 15px;
+    }
+
+    &__address-block {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .delete {
+    flex-direction: row;
+
+    &__cross {
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+//?-------------------------------------------
+//*_____3-lg-3______--1100--______3-lg-3______
+//?-------------------------------------------
+
+@media (min-width: 1100px) {
+  //!------------1----HERO----1-----------
+  .hero {
+    &__bridge {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  .bridge {
+    &__media-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__media-name {
+      min-width: 125px;
+    }
+
+    &__media-link {
+      margin-left: 10px;
+    }
+
+    &__messenger {
+      margin-left: 30px;
+    }
+  }
+
+  .profile-desk {
+    &__user-info {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__user-left-side {
+      & img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__user-right-side {
+      margin: 0 0 0 30px;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .header {
+    &__r-side {
+      position: relative;
+    }
+  }
+}

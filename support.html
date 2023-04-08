@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/i/favicon.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Техподдержка</title>
+</head>
+
+<body>
+  <!--?--для лучшего восприятия комментариев-->
+  <!--*--плагин'Better Comments'(Aaron Bond)-->
+
+  <!--!-----------0----HEADER----0------------->
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="header__inner">
+
+        <!--?-------------------------->
+        <!--*from--320px--to--576px---->
+        <!--?-------------------------->
+        <div class="header__res320">
+          <div class="header__l-side">
+            <svg class="header__logo">
+              <use xlink:href="img/i/sprite.svg#logo1"></use>
+            </svg>
+          </div>
+          <div class="header__r-side">
+            <!--todo--profile-btn-->
+            <svg class="header__profile-btn">
+              <use xlink:href="img/i/sprite.svg#b0-01-profile-menu"></use>
+            </svg>
+            <!--todo--burger-btn-->
+            <svg class="header__burger-btn">
+              <use xlink:href="img/i/sprite.svg#b0-02-burger-menu"></use>
+            </svg>
+            <!--todo--profile-bar-->
+            <div class="profile-bar">
+              <div class="profile profile_320">
+                <div class="profile__user-info">
+                  <!--<div class="profile__user-left-side">
+                    <picture>
+                      <source srcset="img/b0-header/clientLogo.png">
+                      <img src="img/b0-header/clientLogo.png" alt="clientLogo">
+                    </picture>
+                  </div>-->
+                  <div class="profile__user-right-side">
+                    <div class="profile__user-name">Королев Артем</div>
+                    <div class="profile__user-phone">7 (687) 767 - 75 - 45</div>
+                  </div>
+                </div>
+                <nav class="profile__nav">
+                  <ul class="profile__list">
+                    <!--todo--Профиль-->
+                    <li class="profile__item">
+                      <a href="/index.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-11-icon-user"></use>
+                          </svg>
+                          <div class="profile__text">Профиль</div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--todo--Заказы-->
+                    <li class="profile__item profile__attention-wrap">
+                      <a href="/order.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-12-icon-menu"></use>
+                          </svg>
+                          <div class="profile__text">Заказы</div>
+                        </div>
+                        <span class="profile__attention">2</span>
+                      </a>
+                    </li>
+                    <!--todo--Отзывы-->
+                    <li class="profile__item profile__attention-wrap">
+                      <a href="/feedback.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-13-icon-message"></use>
+                          </svg>
+                          <div class="profile__text">Отзывы</div>
+                        </div>
+                        <span class="profile__attention">9+</span>
+                      </a>
+                    </li>
+                    <!--todo--Техподдержка-->
+                    <li class="profile__item">
+                      <a href="#" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-14-icon-support"></use>
+                          </svg>
+                          <div class="profile__text">Техподдержка</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--todo--выход-->
+                  <div class="profile__item">
+                    <a href="#" class="profile__link profile__exit">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-15-icon-exit"></use>
+                        </svg>
+                        <div class="profile__text_exit profile__text">Выход</div>
+                      </div>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="burger"></div>
+          </div>
+        </div>
+
+        <!--?-------------------------->
+        <!--*from--576px--to--992px---->
+        <!--?-------------------------->
+        <div class="header__res576">
+          <svg class="header__burger-btn">
+            <use xlink:href="img/i/sprite.svg#b0-02-burger-menu"></use>
+          </svg>
+          <svg class="header__logo">
+            <use xlink:href="img/i/sprite.svg#logo2"></use>
+          </svg>
+          <div class="header__r-side">
+            <svg class="header__profile-btn">
+              <use xlink:href="img/i/sprite.svg#b0-01-profile-menu"></use>
+            </svg>
+            <!--todo--profile-bar-->
+            <div class="profile-bar">
+              <div class="profile profile_320">
+                <div class="profile__user-info">
+                  <!--<div class="profile__user-left-side">
+                    <picture>
+                      <source srcset="img/b0-header/clientLogo.png">
+                      <img src="img/b0-header/clientLogo.png" alt="clientLogo">
+                    </picture>
+                  </div>-->
+                  <div class="profile__user-right-side">
+                    <div class="profile__user-name">Королев Артем</div>
+                    <div class="profile__user-phone">7 (687) 767 - 75 - 45</div>
+                  </div>
+                </div>
+                <nav class="profile__nav">
+                  <ul class="profile__list">
+                    <!--todo--Профиль-->
+                    <li class="profile__item">
+                      <a href="/index.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-11-icon-user"></use>
+                          </svg>
+                          <div class="profile__text">Профиль</div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--todo--Заказы-->
+                    <li class="profile__item profile__attention-wrap">
+                      <a href="/order.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-12-icon-menu"></use>
+                          </svg>
+                          <div class="profile__text">Заказы</div>
+                        </div>
+                        <span class="profile__attention">2</span>
+                      </a>
+                    </li>
+                    <!--todo--Отзывы-->
+                    <li class="profile__item profile__attention-wrap">
+                      <a href="/feedback.html" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-13-icon-message"></use>
+                          </svg>
+                          <div class="profile__text">Отзывы</div>
+                        </div>
+                        <span class="profile__attention">9+</span>
+                      </a>
+                    </li>
+                    <!--todo--Техподдержка-->
+                    <li class="profile__item">
+                      <a href="#" class="profile__link">
+                        <div class="profile__text-wrap">
+                          <svg class="profile__logo">
+                            <use xlink:href="img/i/sprite.svg#b1-14-icon-support"></use>
+                          </svg>
+                          <div class="profile__text">Техподдержка</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--todo--выход-->
+                  <div class="profile__item">
+                    <a href="#" class="profile__link profile__exit">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-15-icon-exit"></use>
+                        </svg>
+                        <div class="profile__text_exit profile__text">Выход</div>
+                      </div>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--?------------------------->
+        <!--*from--992px--to--2kpx---->
+        <!--?------------------------->
+        <div class="header__res992">
+          <svg class="header__logo">
+            <use xlink:href="img/i/sprite.svg#logo2"></use>
+          </svg>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="" class="header__nav-link">Мастера и компании</a></li>
+              <li class="header__nav-item">
+                <a href="" class="header__nav-link">Советы и лайфхаки</a></li>
+              <li class="header__nav-item">
+                <a href="" class="header__nav-link">Сопровождение</a></li>
+              <li class="header__nav-item">
+                <a href="" class="header__nav-link">Технадзор</a></li>
+            </ul>
+          </nav>
+          <svg class="header__profile-btn">
+            <use xlink:href="img/i/sprite.svg#b0-01-profile-menu"></use>
+          </svg>
+          <!--todo--profile-bar-->
+          <div class="profile-bar">
+            <div class="profile profile_320">
+              <div class="profile__user-info">
+                <!--<div class="profile__user-left-side">
+                  <picture>
+                    <source srcset="img/b0-header/clientLogo.png">
+                    <img src="img/b0-header/clientLogo.png" alt="clientLogo">
+                  </picture>
+                </div>-->
+                <div class="profile__user-right-side">
+                  <div class="profile__user-name">Королев Артем</div>
+                  <div class="profile__user-phone">7 (687) 767 - 75 - 45</div>
+                </div>
+              </div>
+              <nav class="profile__nav">
+                <ul class="profile__list">
+                  <!--todo--Профиль-->
+                  <li class="profile__item">
+                    <a href="/index.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-11-icon-user"></use>
+                        </svg>
+                        <div class="profile__text">Профиль</div>
+                      </div>
+                    </a>
+                  </li>
+                  <!--todo--Заказы-->
+                  <li class="profile__item profile__attention-wrap">
+                    <a href="/order.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-12-icon-menu"></use>
+                        </svg>
+                        <div class="profile__text">Заказы</div>
+                      </div>
+                      <span class="profile__attention">2</span>
+                    </a>
+                  </li>
+                  <!--todo--Отзывы-->
+                  <li class="profile__item profile__attention-wrap">
+                    <a href="/feedback.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-13-icon-message"></use>
+                        </svg>
+                        <div class="profile__text">Отзывы</div>
+                      </div>
+                      <span class="profile__attention">9+</span>
+                    </a>
+                  </li>
+                  <!--todo--Техподдержка-->
+                  <li class="profile__item">
+                    <a href="#" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-14-icon-support"></use>
+                        </svg>
+                        <div class="profile__text">Техподдержка</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!--todo--выход-->
+                <div class="profile__item">
+                  <a href="#" class="profile__link profile__exit">
+                    <div class="profile__text-wrap">
+                      <svg class="profile__logo">
+                        <use xlink:href="img/i/sprite.svg#b1-15-icon-exit"></use>
+                      </svg>
+                      <div class="profile__text_exit profile__text">Выход</div>
+                    </div>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!--!-----------1----HERO----1------------->
+
+    <section class="hero">
+      <div class="container-fluid">
+        <nav class="hero__nav-chain">
+          <a href="#">Главная</a>
+        </nav>
+        <h1 class="title">Техподдержка</h1>
+        <div class="hero__inner row">
+          <div class="hero__left-side col-xs-12 col-sm-5 col-md-4 col-lg-3 mb-3">
+            <!--todo--profile-bar-->
+            <div class="profile block">
+              <div class="profile__user-info">
+
+                <!--*--modal-btn-->
+                <div data-modal-button="user-avatar-edit" class="profile__user-left-side">
+                  <picture class="profile__pic-edit pic-edit">
+                    <svg class="pic-edit__icon">
+                      <use xlink:href="img/i/sprite.svg#b0-04-pic-edit"></use>
+                    </svg>
+                    <source srcset="img/b0-header/clientLogo.png">
+                    <img src="img/b0-header/clientLogo.png" alt="clientLogo">
+                  </picture>
+                </div>
+
+                <div class="profile__user-right-side">
+                  <div class="profile__user-name">Королев Артем</div>
+                  <div class="profile__user-phone">7 (687) 767 - 75 - 45</div>
+                </div>
+              </div>
+              <nav class="profile__nav">
+                <ul class="profile__list">
+                  <!--todo--Профиль-->
+                  <li class="profile__item">
+                    <a href="/index.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-11-icon-user"></use>
+                        </svg>
+                        <div class="profile__text text">Профиль</div>
+                      </div>
+                    </a>
+                  </li>
+                  <!--todo--Заказы-->
+                  <li class="profile__item profile__attention-wrap">
+                    <a href="/order.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-12-icon-menu"></use>
+                        </svg>
+                        <div class="profile__text text">Заказы</div>
+                      </div>
+                      <span class="profile__attention">2</span>
+                    </a>
+                  </li>
+                  <!--todo--Отзывы-->
+                  <li class="profile__item profile__attention-wrap">
+                    <a href="/feedback.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-13-icon-message"></use>
+                        </svg>
+                        <div class="profile__text text">Отзывы</div>
+                      </div>
+                      <span class="profile__attention">9+</span>
+                    </a>
+                  </li>
+                  <!--todo--Техподдержка-->
+                  <li class="profile__item">
+                    <a href="support.html" class="profile__link">
+                      <div class="profile__text-wrap">
+                        <svg class="profile__logo">
+                          <use xlink:href="img/i/sprite.svg#b1-14-icon-support"></use>
+                        </svg>
+                        <div class="profile__text text">Техподдержка</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!--todo--выход-->
+                <div class="profile__item">
+                  <a href="#" class="profile__link profile__exit">
+                    <div class="profile__text-wrap">
+                      <svg class="profile__logo">
+                        <use xlink:href="img/i/sprite.svg#b1-15-icon-exit"></use>
+                      </svg>
+                      <div class="profile__text profile__text_exit text">Выход</div>
+                    </div>
+                  </a>
+                </div>
+              </nav>
+            </div>
+
+             <!--todo--banner-->
+            <div class="hero__banner-576">
+              <a href="#" class="banner">
+                <picture>
+                  <source srcset="img/b01-banner/banner.png">
+                  <img src="img/b01-banner/banner.png" alt="banner">
+                </picture>
+              </a>
+
+              <!--*--modal-btn--(account-delete-УДАЛЕНИЕ-АККАУНТА)-->
+              <div data-modal-button="account-delete" class="delete block">
+                <svg class="delete__cross">
+                  <use xlink:href="img/i/sprite.svg#b2-01-cross"></use>
+                </svg>
+                <div class="delete__text">Удалить аккаунт</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right-side col">
+            <!--!--контакты-->
+            <div class="hero__contact contact block">
+              <div class="contact__head text text_theme_bold text_theme_black">Наши контакты</div>
+              <div class="contact__body">
+                <div class="contact__phone text">+7 (687) 767 - 75 - 45</div>
+              </div>
+            </div>
+            <!--!--часто задаваемые вопросы-->
+            <div class="hero__faq faq block">
+              <div class="faq__head text text_theme_bold text_theme_black">Часто задаваемые вопросы</div>
+              <ul class="faq__list">
+                <!--?--вопрос-->
+                <li class="faq__item spoiler">
+                  <div class="faq__title spoiler__trigger">
+                    <div class="text">Вопрос</div>
+                    <svg>
+                      <use xlink:href="img/i/sprite.svg#p5-b1-01-arrowDown"></use>
+                    </svg>
+                  </div>
+                  <div class="faq__content spoiler__content text">ответ на вопрос</div>
+                </li>
+                 <!--?--вопрос-->
+                <li class="faq__item spoiler">
+                  <div class="faq__title spoiler__trigger">
+                    <div class="text">Вопрос</div>
+                    <svg>
+                      <use xlink:href="img/i/sprite.svg#p5-b1-01-arrowDown"></use>
+                    </svg>
+                  </div>
+                  <div class="faq__content spoiler__content text">ответ на вопрос</div>
+                </li>
+                 <!--?--вопрос-->
+                <li class="faq__item spoiler">
+                  <div class="faq__title spoiler__trigger">
+                    <div class="text">Вопрос</div>
+                    <svg>
+                      <use xlink:href="img/i/sprite.svg#p5-b1-01-arrowDown"></use>
+                    </svg>
+                  </div>
+                  <div class="faq__content spoiler__content text">ответ на вопрос</div>
+                </li>
+                 <!--?--вопрос-->
+                <li class="faq__item spoiler">
+                  <div class="faq__title spoiler__trigger">
+                    <div class="text">Вопрос</div>
+                    <svg>
+                      <use xlink:href="img/i/sprite.svg#p5-b1-01-arrowDown"></use>
+                    </svg>
+                  </div>
+                  <div class="faq__content spoiler__content text">ответ на вопрос</div>
+                </li>
+                 <!--?--вопрос-->
+                <li class="faq__item spoiler">
+                  <div class="faq__title spoiler__trigger">
+                    <div class="text">Вопрос</div>
+                    <svg>
+                      <use xlink:href="img/i/sprite.svg#p5-b1-01-arrowDown"></use>
+                    </svg>
+                  </div>
+                  <div class="faq__content spoiler__content text">ответ на вопрос</div>
+                </li>
+              </ul>
+            </div>
+            <!--!--форма для вопросов-->
+            <div class="hero__feedback-form feedback-form block">
+              <div class="feedback-form__head text text_theme_bold text_theme_black">Задайте свой вопрос</div>
+              <form action="#" class="feedback-form__inner control">
+                <div class="feedback-form__left-side">
+                  <textarea class="feedback-form__textarea" placeholder="Ваше сообщение" id="message"></textarea>
+                </div>
+                <div class="feedback-form__right-side">
+                  <label for="user-name" class="control__label">
+                    <input type="text" class="control__input" placeholder="Ваше имя" id="user-name">
+                  </label>
+                  <label for="email" class="control__label">
+                    <input type="email" class="control__input" placeholder="Ваш email" id="email">
+                  </label>
+                  <label for="phone" class="control__label">
+                    <input type="tel" class="control__input" placeholder="Ваш телефон" id="phone">
+                  </label>
+                  <button type="submit" class="butn butn_theme_success">отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--*--modal-card--(avatarEdit)-->
+    <div id="user-avatar-edit" data-modal class="hidden fade-block" >
+      <div class="modal-card">
+        <div class="modal-card__window">
+          <div class="modal-card__header text-black-50">Изменить аватар</div>
+          <form class="modal-card__body text" enctype="multipart/form-data" method="post">
+            <input type="file" name="user-avatar-edit">
+            <div class="modal-card__footer">
+              <div data-modal-close class="modal-card__cancel butn butn_theme_empty">отменить</div>
+              <input type="submit" value="применить" class="modal-card__success butn butn_theme_success">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--*--modal-card--(account-delete-УДАЛЕНИЕ-АККАУНТА)-->
+    <div id="account-delete" data-modal class="hidden fade-block" >
+      <div class="modal-card">
+        <div class="modal-card__window">
+          <div class="modal-card__header">
+            <div class="text-black-50">Удалить аккаунт?</div>
+            <a href="/order.html" class="modal-card__delete">
+              <svg class="modal-card__cross">
+                <use xlink:href="img/i/sprite.svg#b2-01-cross"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="modal-card__body text">
+            <span>Вы действительно хотите удалить аккаунт?</span>
+            <span>Данное действие нельзя возвратить</span>
+          </div>
+          <div class="modal-card__footer_description">
+            <div data-modal-close class="modal-card__cancel butn butn_theme_empty">отменить</div>
+            <a href="/order.html" class="modal-card__delete butn butn_theme_red">удалить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!-----------2----ADDITIONAL----2-----320px----->
+
+    <section class="additional">
+      <div class="container-fluid">
+        <div class="additional__inner">
+          <a href="#" class="additional__banner banner">
+            <picture>
+              <source srcset="img/b01-banner/banner.png">
+              <img src="img/b01-banner/banner.png" alt="banner">
+            </picture>
+          </a>
+          <!--*--modal-btn--(account-delete-УДАЛЕНИЕ-АККАУНТА)-->
+          <div data-modal-button="account-delete" class="delete block">
+            <svg class="delete__cross">
+              <use xlink:href="img/i/sprite.svg#b2-01-cross"></use>
+            </svg>
+            <div class="delete__text">Удалить аккаунт</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--!-----------00----FOOTER----00------------->
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="footer__inner">
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

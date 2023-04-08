@@ -1,0 +1,240 @@
+.privilege-status {
+  border-radius: 14px;
+  border: 1px solid $clr-gr-EB;
+  position: relative;
+  &::before {
+    content: "";
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-width: 100px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: transparent;
+    color: $clrText-wh;
+    padding: 2px 6px;
+    border-radius: 0px 0px 3px 3px;
+    transform: translate(-50%, 0);
+  }
+  &_pro {
+    border: 1px solid $clr-green;
+    &::before {
+      content: "pro статус";
+      background-color: $clr-green;
+      color: $clrText-wh;
+    }
+  }
+  &_confirmed {
+    border: 1px solid $clr-sky;
+    &::before {
+      content: "профиль подтвержден";
+      background-color: $clr-sky;
+      color: $clrText-wh;
+    }
+  }
+  &_not-confirmed {
+    border: 1px solid $clr-gr-EB;
+    &::before {
+      content: "профиль не подтвержден";
+      background-color: $clr-gr-EB;
+      color: $clrTextBlack;
+    }
+  }
+  &_blocked {
+    border: 1px solid $clr-red;
+    &::before {
+      content: "профиль заблокирован";
+      background-color: $clr-red;
+      color: $clrText-wh;
+    }
+  }
+  &_selected {
+    border: 1px solid $clr-blue;
+    &::before {
+      content: "исполнитель выбран";
+      background-color: $clr-blue;
+      color: $clrText-wh;
+    }
+  }
+}
+
+.hero {
+  &__title_response {
+    margin: 30px 0;
+  }
+  &__response-card {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.description {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__eye {
+    fill: $clrEmpty;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  &__right-side,
+  &__left-side {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right-side {
+    margin-top: 10px;
+    flex-direction: row-reverse;
+  }
+
+  &__edit-btn {
+    cursor: pointer;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 1px solid $clrEmpty;
+    border-bottom: 1px solid $clrEmpty;
+    & li:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__item-head {
+    margin-bottom: 5px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 15px;
+  }
+
+  &__butn {
+    max-width: 120px;
+  }
+}
+
+.response-card {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    display: flex;
+    padding: 20px;
+  }
+
+  &__logo {
+    & img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  &__head {
+    font-size: 20px;
+  }
+
+  &__stars {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  &__star {
+    width: 20px;
+    height: 20px;
+    @media (min-width: 992px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__star-num {
+    transform: translateY(-2px);
+    font-size: 15px;
+    margin-left: 7px;
+    color: $clr-orange;
+    @media (min-width: 992px) {
+      transform: translateY(-3px);
+      font-size: 18px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  &__footer {
+    display: flex;
+    padding: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__butn {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.card-button {
+  &_static {
+    &:nth-child(2),
+    &:nth-child(5) {
+      display: none;
+    }
+  }
+
+  &_active {
+    &:nth-child(1) {
+      display: none;
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+      display: block;
+    }
+  }
+}
+
+@import "_media-response";
